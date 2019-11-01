@@ -1,5 +1,6 @@
 Performance-wise rest daemon made using libev event loop, able to serve rest status responses at very high speed
-## How to build
+
+ ## How to build
 -  sudo apt install libev-dev
 -  clone this repo
 - change folder to the repo root and run make
