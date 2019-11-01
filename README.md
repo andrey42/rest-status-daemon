@@ -1,12 +1,15 @@
 Performance-wise rest daemon made using libev event loop, able to serve rest status responses at very high speed
+
 ## How to build
--  sudo apt install libev-dev
--  clone this repo
+- sudo apt install libev-dev
+- clone this repo
 - change folder to the repo root and run make
-- run bin/restworkerd
+- run bin/restdaemon
 - access server via http://localhost:8888/status
 
 The daemon consumes 10-12Mb of memory even under heavy load and is able to process up to 17000 requests per second, provided there are no bottlenecks in the workers themselves. 
+
+Optionally you can install apache-utils package and access performance results, shown below
 
 ## Pmem info under load 50 simultaneous connections using Apache Bench
 
